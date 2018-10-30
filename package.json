@@ -4,7 +4,10 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
     "restify": "^7.2.1",
+    "restify-await-promise": "^2.1.0",
     "yenv": "^2.1.0"
   },
   "devDependencies": {

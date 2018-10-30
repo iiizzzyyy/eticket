@@ -5,12 +5,24 @@ development:
   CRT: './certs/server.crt'
   HUBSPOT_ID: 2661178
   HUBSPOT_API_KEY: 2b83f1c0-1e7a-4ffd-b24e-7c49a0554e0c
-  HUBSPOT_PIPELINE_ID: 33eefdb-1801-40aa-9640-76dc1106d927
+  HUBSPOT_PIPELINE_ID: 733eefdb-1801-40aa-9640-76dc1106d927
   HUBSPOT_PARTIAL_PAYMENT_STAGE_ID: 112829
   HUBSPOT_FULL_PAYMENT_STAGE_ID: 112830
+  HUBPSOT_CONTACTS_API_URL: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email
+  HUBPSOT_DEALS_API_URL: https://api.hubapi.com/deals/v1/deal
+  HUBSPOT_CONTACTS_PARAMS: ['firstname', 'lastname', 'website', 'company', 'phone', 'address', 'city', 'state', 'zip']
+  HUBSPOT_DEALS_PARAMS: ['dealname', 'dealstage', 'pipeline', 'hubspot_owner_id', 'closedate', 'amount', 'dealtype']
 # Production-specific settings.
 production:
   PORT: 443
   KEY: './certs/server.key'
   CRT: './certs/server.crt'
+  HUBPSOT_API_URL: https://api.hubapi.com
+  HUBSPOT_ID: 2661178
+  HUBSPOT_API_KEY: 2b83f1c0-1e7a-4ffd-b24e-7c49a0554e0c
+  HUBSPOT_PIPELINE_ID: 33eefdb-1801-40aa-9640-76dc1106d927
+  HUBSPOT_PARTIAL_PAYMENT_STAGE_ID: 112829
+  HUBSPOT_FULL_PAYMENT_STAGE_ID: 112830
+  HUBSPOT_CONTACTS_PARAMS: ['firstname', 'lastname', 'website', 'company', 'phone', 'address', 'city', 'state', 'zip']
+  HUBSPOT_DEALS_PARAMS: ['dealname', 'dealstage', 'pipeline', 'hubspot_owner_id', 'closedate', 'amount', 'dealtype']
 
