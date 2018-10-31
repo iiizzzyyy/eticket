@@ -1,3 +1,4 @@
+const error = require('restify-errors');
 const hubspotService = require('../services/hubspot.js');
 const yenv = require('yenv');
 const config = yenv('config.yaml');
@@ -7,6 +8,8 @@ const { HUBSPOT_PIPELINE_ID, HUBSPOT_PARTIAL_PAYMENT_STAGE_ID, HUBSPOT_FULL_PAYM
 module.exports = {
     post: async (req, res, next) => {
         const params = { ...req.body };
+        const { email } = params;
+        !email && res.send(new error.MissingParameterError('email is required'));
         const contactRepsonse = await hubspotService.contacts(params);
         const { data: { vid } } = contactRepsonse;
         const dealResponse  = await hubspotService.deals({
@@ -15,6 +18,7 @@ module.exports = {
             vid,
             ...params,
         });
+
         res.send('OK');
     }
 };

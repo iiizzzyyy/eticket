@@ -8,10 +8,11 @@ const eTicketController = require('./api/controllers/eTicket.js');
 const { KEY, CRT, PORT } = config
 const serverOptions = { key: fs.readFileSync(KEY), certificate: fs.readFileSync(CRT) };
 const server = restify.createServer(serverOptions);
+
 // SERVER CONFIG
 server.use(restify.plugins.bodyParser());
 restifyPromise.install(server);
 // ENDPOINTS
-server.post('/', eTicketController.post);
+server.post('/eticket', eTicketController.post);
 // SERVER START
 server.listen(PORT);
