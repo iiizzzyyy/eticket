@@ -23,6 +23,8 @@ production:
   HUBSPOT_PIPELINE_ID: 33eefdb-1801-40aa-9640-76dc1106d927
   HUBSPOT_PARTIAL_PAYMENT_STAGE_ID: 112829
   HUBSPOT_FULL_PAYMENT_STAGE_ID: 112830
+  HUBPSOT_CONTACTS_API_URL: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/
+  HUBPSOT_DEALS_API_URL: https://api.hubapi.com/deals/v1/deal?hapikey=
   HUBSPOT_CONTACTS_PARAMS: ['firstname', 'lastname', 'website', 'company', 'phone', 'address', 'city', 'state', 'zip']
   HUBSPOT_DEALS_PARAMS: ['dealname', 'dealstage', 'pipeline', 'hubspot_owner_id', 'closedate', 'amount', 'dealtype']
 
