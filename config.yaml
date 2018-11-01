@@ -1,6 +1,6 @@
 # Development-specific settings.
 development:
-  PORT: 8080
+  PORT: 80
   KEY: './certs/server.key'
   CRT: './certs/server.crt'
   HUBSPOT_ID: 2661178
