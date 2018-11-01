@@ -19,3 +19,4 @@ POST /eticket
   - closedate
   - amount
   - dealtype
+  - isFullPayment
