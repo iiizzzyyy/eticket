@@ -14,8 +14,8 @@ development:
 # Production-specific settings.
 production:
   PORT: 443
-  KEY: './certs/server.key'
-  CRT: './certs/server.crt'
+  KEY: '/etc/letsencrypt/live/eticket.ids.agency/privkey.pem'
+  CRT: '/etc/letsencrypt/live/eticket.ids.agency/fullchain.pem'
   HUBSPOT_API_KEY: 2b83f1c0-1e7a-4ffd-b24e-7c49a0554e0c
   HUBSPOT_PIPELINE_ID: 733eefdb-1801-40aa-9640-76dc1106d927
   HUBSPOT_PARTIAL_PAYMENT_STAGE_ID: 112829
