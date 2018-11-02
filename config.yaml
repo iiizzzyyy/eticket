@@ -10,7 +10,9 @@ development:
   HUBPSOT_CONTACTS_API_URL: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/
   HUBPSOT_DEALS_API_URL: https://api.hubapi.com/deals/v1/deal?hapikey=
   HUBSPOT_CONTACTS_PARAMS: ['firstname', 'lastname', 'website', 'company', 'phone', 'address', 'city', 'state', 'zip']
+  CUSTOM_CONTACTS_PARAMS: ['passport', 'nationality', 'language']
   HUBSPOT_DEALS_PARAMS: ['dealname', 'dealstage', 'pipeline', 'hubspot_owner_id', 'closedate', 'amount', 'dealtype']
+  CUSTOM_DEALS_PARAMS: ['departure_date', 'arrival_date', 'moneda', 'payment_type', 'adults', 'children', 'infants']
 # Production-specific settings.
 production:
   PORT: 443
@@ -23,5 +25,7 @@ production:
   HUBPSOT_CONTACTS_API_URL: https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/
   HUBPSOT_DEALS_API_URL: https://api.hubapi.com/deals/v1/deal?hapikey=
   HUBSPOT_CONTACTS_PARAMS: ['firstname', 'lastname', 'website', 'company', 'phone', 'address', 'city', 'state', 'zip']
+  CUSTOM_CONTACTS_PARAMS: ['passport', 'nationality', 'language']
   HUBSPOT_DEALS_PARAMS: ['dealname', 'dealstage', 'pipeline', 'hubspot_owner_id', 'closedate', 'amount', 'dealtype']
+  CUSTOM_DEALS_PARAMS: ['departure_date', 'arrival_date', 'moneda', 'payment_type', 'adults', 'children', 'infants']
 

@@ -3,7 +3,7 @@ const restify = require('restify');
 const yenv = require('yenv');
 const config = yenv('config.yaml');
 const restifyPromise = require('restify-await-promise');
-const eTicketController = require('./api/controllers/eTicket.js');
+const eTicketController = require('./api/controllers/eTicketController.js');
 
 const { env: { NODE_ENV } } = process;
 const { KEY, CRT, PORT } = config;
