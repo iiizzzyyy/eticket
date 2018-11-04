@@ -1,6 +1,6 @@
 # Development-specific settings.
 development:
-  PORT: 80
+  PORT: 8080
   KEY: './certs/test/server.key'
   CRT: './certs/test/server.crt'
   CA: './certs/test/ca.crt'
