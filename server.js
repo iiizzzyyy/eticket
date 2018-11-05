@@ -18,7 +18,11 @@ const server = restify.createServer(serverOptions);
 server.use(restify.plugins.bodyParser());
 restifyPromise.install(server);
 
+//PRE HOOK
+server.pre((req, res, next) => console.log('NEW REQUEST:', req))
+
 // ENDPOINTS
 server.post('/eticket', eTicketController.post);
+server.get('/', (req, res, next) => res.send('BIEN'));
 // SERVER START
-server.listen(PORT);
+server.listen(PORT, () => console.log('%s listening at %s', server.name, server.url));
