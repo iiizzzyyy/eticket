@@ -39,7 +39,7 @@ Examples:
 
 ### Curl 
 
-curl -v -s -k --key ssl/client.key --cert ssl/client.crt https://localhost:5678
+curl -v -s -k --key ssl/client.key --cert ssl/client.crt https://localhost
 
 ### Node with Axios
 
@@ -48,5 +48,5 @@ const httpsAgent = new https.Agent({
   key: fs.readFileSync("./ssl/client.key"),
 })
 
-axios.post(url, { httpsAgent })
+axios.post("https://localhost", { httpsAgent })
 
